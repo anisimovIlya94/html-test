@@ -5,6 +5,11 @@
     list-style-type: none;
 }
 
+/* h1{
+    padding: 0px;
+    font-size: 10px;
+} */
+
 body{
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
     color: #FFFFFF;
@@ -22,10 +27,16 @@ body{
     background: none;
 }
 
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
 .header_title{
     display: flex;
     gap: 11px;
     align-items: center;
+    margin-right: 77px;
 }
 
 .header_title_link{
@@ -47,9 +58,100 @@ body{
     
 }
 
+.header_search{
+    position: relative;
+}
+
+.header_search_button{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    cursor: pointer;
+}
+
+.header_search_input{
+    color: #FFFFFF ;
+    background-color: rgba(31, 41, 55, 0.60);
+    width: 174px;
+    height: 40px;
+    border-radius: 100px;
+    padding-left: 50px;
+    font-size: 16px;
+    border: none;
+}
+
 .main_wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main_theme{
+    color: #FFF;
+    font-size: 14px;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main_theme_point{
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
+.main_title{
+    margin-top: 14px;
+    max-width: 520px;
+    color: #FFF;
+    text-align: center;
+font-size: 24px;
+line-height: 38px;
+}
+
+.main_author{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.main_author_profession{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.6;
+}
+
+.main_image{
+    margin-top: 30px;
+}
+
+.main_texts_wrapper{
+    max-width: 650px;
+    margin: 70px 0 70px 0;
+    color: #FFF;
+}
+
+.main_text_big{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.main_text_small{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.footer_license{
+    max-width: 230px;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 16px;
+    opacity: 0.6;
 }
